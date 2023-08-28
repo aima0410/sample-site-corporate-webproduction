@@ -1,4 +1,5 @@
 # flash_front_times
+（学習成果物）
 神奈川県にあるWeb制作会社 Flash Front Timesのホームページ<br>
 スタートアップまたは新規事業専門のWeb制作会社<br>
 
