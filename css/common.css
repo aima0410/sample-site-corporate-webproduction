@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* -----------------
+  【共通】レイアウト
+-------------------*/
+.--spacebetween{
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.container{
+  position:relative;
+  width:1000px;
+  margin:0 auto;
+}
+/* -----------------
+  【共通】スタイル
+-------------------*/
+:root{
+  --bdc:#2c2c46;
+  --atc:linear-gradient(90deg, rgba(89, 173, 177, 1), rgba(207, 142, 157, 1));
+}
+body{
+  color:var(--bdc);
+  font-family:"Noto Sans JP", sans-serif;
+}
+p,ul,ol{
+  font-size:14px;
+  line-height:2em;
+}
+.nav__li a::after{
+  position:absolute;
+  left:0;
+  bottom:0;
+  content:"";
+  width:100%;
+  height:3px;
+  border-radius:1.5px;
+  background:var(--atc);
+  transform:scale(0, 1);
+  transform-origin:center top;
+  transition:transform .1s;
+}
+.nav__li a:hover::after{
+  transform:scale(1,1);
+}
+.--boxshadow{
+  box-shadow: 5px 7px 7px rgba(0, 0, 0, .05);
+}
+.wrapper__ttl{
+  font-size:55px;
+  font-weight:bold;
+  text-align:center;
+  letter-spacing:1.5px;
+}
+.wrapper__ttl--jp{
+  display:block;
+  font-size:14px;
+  font-weight:normal;
+  letter-spacing:.5px;
+  margin:10px 0 60px;
+}
+/* --------------------
+   コンセプト　concept
+----------------------- */
+#concept_wrapper{
+  padding:120px 0 200px;
+  background:var(--atc);
+  color:#fff;
+}
+#concept_wrapper .wrapper__ttl{
+  margin-bottom:50px;
+}
+.concept__heading{
+  margin-bottom:50px;
+  font-size:24px;
+  font-weight:bold;
+  letter-spacing:1px;
+  text-align:center;
+}
+.concept__txt{
+  text-align:center;
+  line-height:2.3em;
+  margin-bottom:30px;
+}
+/* ----------------------
+   インフォカード　info card
+------------------------- */
+.info__card{
+  width:1000px;
+  padding:70px 0;
+  background-color:#fff;
+  border:solid 1px var(--bdc);
+}
+#info__card__ttl{
+  width:650px;
+  padding-bottom:20px;
+  border-bottom:solid 1px var(--bdc);
+  margin:0 auto 40px;
+  font-size:21px;
+  text-align:center;
+}
+/* ---------------------
+    Privacy Policy　プライバシーポリシー
+-----------------------*/
+#privacypolicy{
+  font-size:13px;
+  text-align:center;
+}
+input[name="privacyPolicy"]{
+  position:relative;
+  bottom:1px;
+  width:15px;
+  height:15px;
+  border:solid 1px var(--bdc);
+  margin-right:5px;
+}
+input[name="privacyPolicy"]:checked{
+  background-color:var(--bdc);
+}
+#pp__content{
+  overflow:scroll;
+  width:650px;
+  height:190px;
+  padding:10px 10px 10px 15px;
+  border:solid 1px var(--bdc);
+  margin:20px auto 30px;
+  text-align:left;
+  line-height:1.3em;
+}
+/* pp スクロールバー */
+#pp__content::-webkit-scrollbar {
+  width: 24px;
+  height:100%;
+}
+#pp__content::-webkit-scrollbar-thumb{
+  background-color:var(--bdc);
+}
+#pp__content::-webkit-scrollbar-track{
+  background-color:#b3b3b3;
+}
+/* ---------------------
+    カンパニー　company
+----------------------- */
+#company_wrapper{
+  padding:100px 0 130px;
+}
+.company__buttons{
+  display:flex;
+  justify-content:center;
+}
+.company__buttons a{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:500px;
+  color:#fff;
+}
+.company__buttons p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:210px;
+  height:90px;
+  background-color:rgba(44,44,70,.6);
+  font-size:28px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.company__button__left{
+  display:flex;
+  flex-flow:column;
+}
+#company__link--greeting{
+  height:300px;
+  background-image:url(../images/company_greeting_button.jpg);
+  background-size:500px 300px;
+}
+#company__link--overview{
+  height:300px;
+  background-image:url(../images/company_about_buttom.jpg);
+  background-size:500px 300px;
+}
+#company__link--recruit{
+  background-image:url(../images/company_recruit_button.jpg);
+  background-size:500px 600px;
+}
+/* ---------------------
+    コンタクト　contact
+----------------------- */
+#contact_wrapper{
+  aspect-ratio:1667 / 674;
+  background-image:url(../images/contact_button.jpg);
+  background-size:cover;
+  color:#fff;
+  text-align:center;
+}
+#contact_wrapper .wrapper__ttl--jp{
+  margin-bottom:25px;
+}
+.contact__link{
+  display:inline-flex;
+  flex-flow:column;
+  justify-content:center;
+  width:75%;
+  height:100%;
+}
+.link_box{
+  width:60px;
+  height:60px;
+  border:solid 1px #fff;
+  margin:0 auto;
+  line-height:60px;
+}
+/* ---------------------
+    フッター　footer
+----------------------- */
+footer{
+  padding:100px 0;
+  background-color:var(--bdc);
+  color:#fff;
+}
+footer .container{
+  display:flex;
+  flex-wrap:wrap;
+}
+/*  フッター　左側  */
+#footer__left{
+  margin-right:50px;
+}
+#footer__logo img{
+  width:180px;
+  margin-right:100px;
+}
+#footer__info{
+  font-size:12px;
+  line-height:1.5em;
+  letter-spacing:.5px;
+}
+#footer__info li{
+  margin-bottom:15px;
+}
+#footer__info--big{
+  font-size:15px;
+}
+/*  フッター　右側  */
+#footer__right{
+  margin-bottom:30px;
+}
+#footer__nav{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:top;
+  height:200px;
+}
+.footer__nav__li{
+  margin-bottom:20px;
+  margin-right:100px;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+/*  フッター　コピーライト  */
+#footer__copyright{
+  width:100%;
+  text-align:center;
+  letter-spacing:1px;
+}

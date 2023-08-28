@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜Flash Front Times</title>
+    <meta name="description" content="スタートアップまたは新規事業専門のWeb制作会社。制作依頼から採用まですべてこちらのフォームからお問い合わせください。">
+    <!-- TEL自動検出防止 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- ファビコン設定 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <!-- ウェブクリップアイコン -->
+    <link rel="apple-touch-icon" href="images/webclip.svg">
+    <!-- シェア設定 -->
+    <meta property="og:site_name" content="Flash Front Times">
+    <meta property="og:url" content="http://2303.web-fukui.com/14/web01/">
+    <meta property="og:type" content="article"> <!--　website トップページ以外は article -->
+    <meta property="og:title" content="お問い合わせ｜Flash Front Times">
+    <meta property="og:description" content="スタートアップまたは新規事業専門のWeb制作会社。制作依頼から採用まですべてこちらのフォームからお問い合わせください。">
+    <meta property="og:image" content="http://2303.web-fukui.com/14/web02/images/share.jpg">
+    <meta property="og:locale" content="ja_JP">
+    <!-- Twitter専用のシェア設定 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="スタートアップまたは新規事業専門のWeb制作会社。制作依頼から採用まですべてこちらのフォームからお問い合わせください。">
+    <meta name="twitter:image:src" content="http://2303.web-fukui.com/14/web02/images/share.jpg">
+    <!--　運営アカウントがあれば <meta name="twitter:site" content="@TwiiterID"> -->
+    <!-- CSSファイル -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JSファイル -->
+    <script src="js/partsInclude.js" defer></script>
+    <!-- 検索結果に表示させない＆クローリング防止の設定 -->
+    <meta name="robots" content="noindex,nofollow">
+    <!-- クッキーの設定　同じサイト内のリクエストにのみ送信 -->
+    <script>document.cookie = 'cookieName=value; SameSite=None; Secure';</script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="top_wrapper">
+        <h2 class="wrapper__ttl">CONTACT</h2>
+      </div> <!-- top end -->
+      <div id="contacts_wrapper">
+        <div class="container">
+          <form action="#">
+            <h2 id="info__card__ttl">Flash Front Times に問い合わせる</h2>
+            <div class="info__card">
+              <h3 class="contact__heading">基本情報</h3>
+              <table id="contact__table">
+                <tr class="contact__table__row">
+                  <th class="contact__table__header"><label for="contact__name">氏名（必須）</label></th>
+                  <td class="contact__table__data"><input type="text" name="contactName" id="contact__name"></td>
+                </tr>
+                <tr class="contact__table__row">
+                  <th class="contact__table__header"><label for="contact__belong">所属（必須）</label></th>
+                  <td class="contact__table__data"><input type="text" name="contactBelong" id="contact__belong"></td>
+                </tr>
+                <tr class="contact__table__row">
+                  <th class="contact__table__header"><label for="contact__email">メールアドレス（必須）</label></th>
+                  <td class="contact__table__data"><input type="email" name="contactEmail" id="contact__email"></td>
+                </tr>
+                <tr class="contact__table__row">
+                  <th class="contact__table__header"><label for="contact__tel">電話番号（必須）</label></th>
+                  <td class="contact__table__data"><input type="tel" name="contactTel" id="contact__tel"></td>
+                </tr>
+              </table>
+            </div>
+            <div class="info__card">
+              <div id="contact__content">
+                <h3 class="contact__heading">お問い合わせ内容</h3>
+                <label>
+                  <p>お問い合わせしたい区分を選んでください。</p>
+                  <select name="contactType" id="contact__type">
+                    <option value="instruction">該当する区分を選んでください。（必須）</option>
+                    <option value="0">Web制作など弊社のサービスについて</option>
+                    <option value="1">採用情報について</option>
+                    <option value="2">その他</option>
+                  </select>
+                </label>
+                <label>
+                  <p>以下の欄に内容の詳細を記述してください。</p>
+                  <textarea name="contactContent" id="contact__content"></textarea>
+                </label>
+              </div>
+            </div>
+            <div id="privacypolicy">
+              <input type="checkbox" id="pp__checkbox" name="privacyPolicy">
+              <label for="pp__checkbox">下記の個人情報取り扱いに同意</label>
+              <div id="pp__content">
+                Flash Front Times 株式会社（以下、「当社」という）は、下記「個人情報の取り扱いについて」にある業務内容において顧客及び社員の個人情報を取り扱っています。個人情報の保護は当社の事業活動の基本であり、当社の社会的責務であると考えています。そこで当社では、この個人情報保護方針に基づき、個人情報保護マネジメントシステムを確立するとともに実行し、事業活動にかかわるすべての従業員が一体となって、個人情報の適切な取り扱いを実現いたします。<br>
+                <br>
+                第1条（個人情報の適切な取得、利用、提供に関して）<br>
+                当社は、業務遂行に必要な範囲で個人情報を適切な方法で取得します。個人情報の利用は、特定した利用目的の範囲内とし、利用目的を変更する際には、あらかじめご本人に通知し、同意を得た上でおこないます。個人情報は、法令により認められた場合を除き、本人の同意を得る事なく、第三者に提供することはございません。目的外の利用や提供を防止するため、個人情報の利用および提供は、個人情報保護管理者が、その適正性を確認した上でおこなっています。また、自主点検、内部監査等の活動を通じた統制活動も強化しております。<br>
+                <br>
+                第2条（個人情報保護のための安全管理策）<br>
+                ・個人情報の漏えい、滅失、き損等に対する予防処置<br>
+                当社では、個人情報の漏洩、滅失、き損等を防止するための適切なセキュリティ対策を実施しております。また、これらを徹底するため、従業員への教育・監督をおこなっています。個人情報取り扱い業務を社外に委託する場合は、委託先の選定や監督を厳重におこなっております。<br>
+                ・個人情報の漏えい、滅失、き損等に対する是正処置<br>
+                個人情報の漏えい、滅失、き損等が発生した場合は、被害拡大防止を最優先とし、速やかに是正処置を講じるとともに、原因究明をおこない、再発防止に努めます。また、事故に関する情報について、必要な範囲で関係者、関係機関に報告します。<br>
+                <br>
+                第3条（法令、国が定める指針、その他の規範の遵守）<br>
+                当社は、個人情報の取り扱いに関する法律および関連法令、国が定める指針、所属団体等の規範等を遵守します。<br>
+                <br>
+                第4条（個人情報保護マネジメントシステムの継続的改善）<br>
+                当社は、個人情報の保護に関するマネジメントシステムを実行し、維持するとともに定期的に見直しをおこない、継続的改善に努めます。<br>
+                <br>
+                第5条（個人情報に関する苦情、相談への対応）<br>
+                当社に対して、個人情報の取り扱いに関する苦情、相談をおこなう場合は、下記の「個人情報お問い合わせ窓口」までご連絡ください。また、当社の個人情報保護に関するお問い合わせについても下記にて対応いたします。<br>
+                Flash Front Times 株式会社<br>
+                代表取締役社長　蒲田 哲朗<br>
+                制定日　2017年8月31日<br>
+                <br>
+                個人情報の取扱について<br>
+                業務内容<br>
+                ■DX Consulting事業（Webマーケティング、受託開発、運用保守、LeadGrid、Workship MAGAZINE）<br>
+                ・受託業務の顧客情報の管理<br>
+                ・顧客獲得の為のマーケティング活動全般<br>
+                ・顧客からの問い合わせ対応<br>
+                ・メルマガ会員へのメールマガジン送信<br>
+                ・当社WEBサイト訪問者のユーザー行動分析<br>
+                ・WEB記事・ブログ等の執筆<br>
+                <br>
+                ■Skill Share事業（Workship、Workship Agent、XDesigner）<br>
+                ・個人会員や法人会員の顧客情報の管理<br>
+                ・会員獲得や成約率向上の為のマーケティング活動全般<br>
+                ・個人会員や法人会員からの問い合わせ対応<br>
+                <br>
+                ■その他<br>
+                ・採用における応募者の情報の管理<br>
+                ・当社役職員の名刺の作成<br>
+                ・当社役職員の情報の管理<br>
+                ・個人情報の取り扱いに関するマネジメントシステムの運用<br>
+                 ・当社役職員のアカウントの管理<br>
+                 <br>
+                 共同利用について<br>
+                 当社は、以下に記載する企業との間で、個人データを共同利用致します。<br>
+                 ・共同利用する個人データの項目<br>
+                 ー氏名、電話番号、銀行口座番号等、業務遂行の為に収集させて頂いた情報<br>
+                 ・共同利用する者の範囲<br>
+                 　　ーインベストデザイン株式会社<br>
+                 ・共同利用する者の利用目的<br>
+                 　　ースキルシェアサービスでのフリーランス会員からのご請求金額の前払い業務<br>
+                 ・個人データの管理について責任を要する者<br>
+                 　　ーFlash Front Times 株式会社<br>
+                 <br>
+                 仮名加工情報の取扱い<br>
+                 当社は、仮名加工情報（法令に定める措置を講じて他の情報と照合しない限り特定の個人を識別することができないように個人情報を加工して得られる個人に関する情報）を作成する場合には、以下の対応を行います。<br>
+                 ・法令で定める基準に従って、適正な加工を施すこと<br>
+                 ・法令で定める基準に従って、削除した情報や加工の方法に関する情報の漏えいを防止するために安全管理措置を講じること<br>
+                 ・作成の元となった個人情報の本人を識別するために他の情報と照合しないこと<br>
+                 <br>
+                 本人が容易に認識できない方法による個人情報の取得<br>
+                 当社Webサイトでは、クッキー(Cookie)を使用しております。クッキーは、皆様がページをご覧いただく際に必要なシステム情報や、ご利用中の皆様を同一人物であると確認するための情報としてのみ使用しており、個人が特定されるような情報は含んでおりません。
+              </div>
+            </div>
+            <p id="contact__submit">上記のお問い合わせ内容を</p>
+              <input id="contact__submit__button" type="submit" value="送信する">
+          </form>
+        </div>
+      </div> <!-- contact end -->
+      <div id="company_wrapper">
+        <div class="container">
+          <h2 class="wrapper__ttl">COMPANY<br>
+            <span class="wrapper__ttl--jp">会社紹介</span>
+          </h2>
+          <div class="company__buttons">
+            <div class="company__button__left">
+              <a id="company__link--greeting" href="company.html#greeting_wrapper"><p>代表挨拶</p></a>
+              <a id="company__link--overview" href="company.html#overview_wrapper"><p>会社概要</p></a>
+            </div>
+            <a id="company__link--recruit" href="recruit.html"><p>採用情報</p></a>
+          </div>
+        </div>
+      </div> <!-- company end -->
+    </main>
+    <footer></footer>
+  </body>
+</html>

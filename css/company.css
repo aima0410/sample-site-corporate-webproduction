@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* ------------------
+   ヘッダー　header
+------------------- */
+header{
+  position:fixed;
+  z-index:999;
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:80px;
+  background-color:#fff;
+}
+header  .--spacebetween{
+  align-items:center;
+}
+#header__logo img{
+  width:73px;
+}
+.nav__li{
+  margin-right:38px;
+  font-size:13px;
+}
+.nav__li:last-child{
+  margin-right:0;
+}
+.nav__li a{
+  position:relative;
+  display:block;
+  padding:3px 0;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+/* mainの位置変更 */
+main{
+  padding-top:80px;
+}
+/* ------------------
+   トップ　top
+------------------- */
+#top_wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  aspect-ratio:1667 / 444;
+  background-image:url(../images/company/header.jpg);
+  background-size:cover;
+  color:#fff;
+}
+/* ------------------------
+   グリーティング　greeting
+--------------------------- */
+#greeting_wrapper{
+  padding:100px 0 300px;
+}
+#greeting_wrapper .wrapper__ttl{
+  margin-bottom:50px;
+}
+/* アーティクルヘッダー */
+#article__header{
+  margin-bottom:80px;
+}
+/* アーティクルヘッダー　左側 */
+#article__ceo{
+  position:relative;
+}
+#ceo__img{
+  width:450px;
+  padding:25px;
+  border:solid 1px var(--bdc);
+}
+#ceo__prof{
+  position:absolute;
+  bottom:20px;
+  right:-75%;
+  color:#fff;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+#ceo__prof__role{
+  width:fit-content;
+  padding:7px 20px;
+  background-color:var(--bdc);
+  margin-bottom:20px;
+  font-size:20px;
+}
+#ceo__prof__name{
+  padding:10px 20px;
+  background-color:var(--bdc);
+  font-size:24px;
+}
+#ceo__prof__name span{
+  letter-spacing:2px;
+}
+/* アーティクルヘッダー　右側 */
+#article__ttl{
+  width:fit-content;
+  height:fit-content;
+  padding:40px 110px 20px 60px;
+  background-color:var(--bdc);
+  font-size:28px;
+  font-weight:bold;
+  color:#fff;
+  line-height:1.6em;
+  letter-spacing:1px;
+}
+#article__ttl--en{
+  position:relative;
+  bottom:5px;
+  margin-left:10px;
+  font-size:8px;
+  font-weight:normal;
+  letter-spacing:.7px;
+}
+/* アーティクル　本文 */
+.section__ttl{
+  margin-bottom:30px;
+  font-size:24px;
+  font-weight:bold;
+}
+.section__txt{
+  margin-bottom:35px;
+  font-size:15px;
+  text-align:justify;
+}
+.section__txt:last-child{
+  margin-bottom:70px;
+}
+#article__img{
+  width:100%;
+  margin-bottom:80px;
+}
+#section__sign{
+  font-size:17px;
+  text-align:right;
+}
+/* ------------------------
+   リクルート　recruit
+--------------------------- */
+#recruit_wrapper{
+  aspect-ratio:1667 / 674;
+  background-image:url(../images/company/recruit_button.jpg);
+  background-size:cover;
+  color:#fff;
+  text-align:center;
+}
+#recruit_wrapper .wrapper__ttl--jp{
+  margin-bottom:25px;
+}
+/* ------------------------
+   オーバービュー　overview
+--------------------------- */
+#overview_wrapper{
+  padding:110px 0 150px;
+  background-color:#f3f7fa;
+}
+#overview_wrapper .wrapper__ttl--jp{
+  margin-bottom:50px;
+}
+#overview__table{
+  margin:0 auto;
+}
+.overview__row{
+  border-bottom:solid 1px var(--bdc);
+}
+.overview__header{
+  width:200px;
+  padding:20px 30px;
+  font-size:18px;
+  vertical-align:middle;
+  text-align:right;
+}
+.overview__data{
+  width:400px;
+  padding:20px 30px;
+  font-size:15px;
+  line-height:1.7em;
+}
