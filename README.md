@@ -17,9 +17,6 @@
 </ul>
 
 
-## Link
-http://2303.web-fukui.com/14/web02/
-
 ## Application & Languages　　
 <ul>
   <li>Bracket</li>
